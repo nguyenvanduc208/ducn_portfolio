@@ -112,6 +112,19 @@
         loop: true,
         items: 1
     });
+
+    $('#download_cv').on('click', function() {
+        var fileURL = './NguyenVanDuc_cv.pdf';
+      
+        var a = $('<a>')
+          .attr('href', fileURL)
+          .attr('download', 'NguyenVanDuc_cv.pdf')
+          .attr('target', '_blank');
+      
+        $('body').append(a);
+        a[0].click();
+        a.remove();
+      });
     
 })(jQuery);
 
