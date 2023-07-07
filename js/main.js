@@ -114,11 +114,11 @@
     });
 
     $('#download_cv').on('click', function() {
-        var fileURL = './NguyenVanDuc_cv1.pdf';
+        var fileURL = './NguyenVanDuc_cv_2023.pdf';
       
         var a = $('<a>')
           .attr('href', fileURL)
-          .attr('download', 'NguyenVanDuc_cv1.pdf')
+          .attr('download', 'NguyenVanDuc_cv_2023.pdf')
           .attr('target', '_blank');
       
         $('body').append(a);
